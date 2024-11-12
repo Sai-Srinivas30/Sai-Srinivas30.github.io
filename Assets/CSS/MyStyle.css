@@ -67,3 +67,9 @@ a:hover{
 .a-centre{
     text-align: center;
 }
+
+@media (max-width = 800px){
+    body{
+        background-color: blue !important;
+    }
+}
