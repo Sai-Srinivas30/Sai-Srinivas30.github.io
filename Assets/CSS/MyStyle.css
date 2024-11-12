@@ -34,13 +34,36 @@ li{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: italic;
+    text-indent: initial;
   }
 
 .doto-testing {
   font-family: "Doto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
+  text-align: center !important;
   font-style: normal;
+  letter-spacing: -3px;
+  word-spacing: -17px;
+  white-space: normal;
+  line-height: 10px;
   font-variation-settings:
     "ROND" 0;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    color:aqua;
+}
+
+.a-centre{
+    text-align: center;
 }
