@@ -1,85 +1,193 @@
-<html>
-    <head>
-        <title>
-            This is a test file
-        </title>
-        <link rel="icon" type="image/x-icon" href="Assets/img/google icon.png">
-        <link rel="stylesheet" href="Assets/CSS/MyStyle.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    </head>
-    <body>
-        <h1 class="roboto-bold-italic" style="text-align: center; font-size: 4rem;">
-            This is Heading 1 Tag
-        </h1>
-        <h2 id="Heading-2" class="doto-testing" style="font-size: 4rem;">
-            This is heading 2 Tag
-        </h2>
-        <p class="font-size-10">
-            This is my paragraph Text
-        </p>
-        <a class="a-centre" href="https://www.google.com/">This link will take you to Google </a>
-        <br>
-        <img src="Assets/img/google icon.png" alt="Google Image">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assets/CSS/MyStyle.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="profile-container">
+            <!-- Left Section -->
+            <div>
+                <img src="Assets/img/Profile Pic.jpeg" alt="Profile Picture" class="profile-picture">
+            </div>
 
-        <iframe src="Assets/Pdf/Sai_Srinivas_Buddi_McGill_Resume.pdf" alt="Resume PDF" width="700" height="700"></iframe>
+            <!-- Center Section -->
+            <div class="text-center name-section">
+                <h1>Sai Srinivas Buddi</h1>
+                <h2>UI/UX Designer</h2>
+            </div>
 
-        <video autoplay controls muted width="1000" height="500">
-            <source src="Assets/Video/Dummy Videos For Demo Use.mp4" type="video/mp4">
-        </video>
-        <br>
-        <audio controls>
-            <source src="Assets/Video/Dheema(KoshalWorld.Com).mp3" type="audio/mp3">
-        </audio>
+            <!-- Right Section -->
+            <div class="text-end contact-info">
+                <p><strong>Email:</strong> sai.buddi@mail.mcgill.ca</p>
+                <p><strong>Phone:</strong> +1 (438) 921-8843</p>
+            </div>
+        </div>
+    </div>
 
-        <ul  class="font-color-blue">
-            <li>Information Architecture</li>
-            <li>Web System and Design</li>
-            <li>Programming for Information Professionals</li>
-            <li>Inforamtion Literacy</li>
-        </ul>
-        <ol>
-            <li>INFS 625</li>
-            <li>INFS 634</li>
-            <li>INFS 691</li>
-            <li>INFS 679</li>
-        </ol>
-        <dl>
-            <dt>INFS 625</dt>
-                <dd>Information Architecture</dd>
-            <dt>INFS 634</dt>
-                <dd>Web System and Design</dd>
-            <dt>INFS 691</dt>
-                <dd>Programming for Information Professionals</dd>
-            <dt>INFS 679</dt>
-                <dd>Inforamtion Literacy</dd>
-        </dl>
-        <br>
-        <!-- This is a comment
-            It is a comment-->
-        <table border="2"  >
-            <tr  class="font-color-blue">
-                <th colspan="2">Programs</th>
-                <th>Number of international students</th>
-                <th>Number of Canadian students</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td rowspan="3">ISBP</td>
-                <td>1405</td>
-                <td>70</td>
-                <td>210</td>
-            </tr>
-            <tr>
-                <td>NSMP</td>
-                <td>30</td>
-                <td>170</td>
-                <td>200</td>
-            </tr>
-        </table>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    </body>
+    <!-- Main Content -->
+    <div class="row mt-4">
+        <!-- Left Section (2/3) -->
+        <div class="col-lg-1 left-section">
+        </div>
+        <div class="col-lg-7 left-section">
+            <h3 style="text-align: center;">Profile Introduction</h3>
+            <div class="alert alert-dark" role="alert">
+                <p style="font-weight:650;">Highly skilled User Experience designer who brings forth expertise in design, efficient coding, testing, and
+                    critical thinking to develop customized solutions aligned with the customers' business needs. Currently
+                    pursuing a master's in Information Studies at McGill University, focusing on User Experience and Analysis,
+                    Information Architecture, and Knowledge Management. Proficient in working independently and
+                    collaboratively on real time projects</p>
+            </div>
+
+
+            <h3 style="text-align: center;">Education Information</h3>
+            <div class="container">
+                <div class="education-section d-flex flex-wrap justify-content-between">
+                    <!-- Education Item 1 -->
+                    <div class="card" style="width: 24rem; ">
+                        <img src="Assets/img/McGill-Arts-scaled.jpg" class="card-img-top" alt="McGill University Image">
+                        <div class="card-header">
+                            Master's in Information Studies, McGill University, Montréal, Canada
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Cumulative GPA 3.67/4
+                            </p>
+                            <p class="duration">2023 - Present</p>
+                        </div>
+                    </div>
+        
+                    <!-- Education Item 2 -->
+                    <div class="card" style="width: 24rem;">
+                        <img src="Assets/img/tech_park.jpg" class="card-img-top" alt="SRM University Image">
+                        <div class="card-header">
+                            Bachelor's in Computer Science, SRM Institute Of Science & Technology (Deemed University), Chennai, India
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Graduated in First Class with Distinction with percentage of 88.86
+                            </p>
+                            <p class="duration">2016 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <h3 style="text-align: center;">Employment History</h2>
+                <div id="employmentCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div>
+                                <div class="job-title">Student Involvement Program Assistant</div>
+                                <div class="company-name">Campus Life and Engagement, McGill University</div>
+                                <div class="job-duration">2023 Nov - Present</div>
+                                <p class="job-description">
+                                        Conducted and analyzed Student Surveys for our new platform , aimed at enhancing student
+                                    involvement and engagement on campus.
+                                    <br><br>
+                                        Maintained the McGill Mentorship Network website and coordinated mentorship programs,
+                                    groups and students to increase student participation on the platform.
+                                    <br><br>
+                                        Collaborated with CL&E to enhance student services and improve the overall campus experience
+                                    for new and returning students
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div>
+                                <div class="job-title">Software Developer</div>
+                                <div class="company-name">Bridge Solutions Group, Bengaluru</div>
+                                <div class="job-duration">2022 Apr - 2023 June</div>
+                                <p class="job-description">Working with the L3 Engineering Team, determining the client's requirements around Sterling
+                                    and providing a solution to meet those requirements.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div>
+                                <div class="job-title">Software Developer </div>
+                                <div class="company-name">Pivotree, Bengaluru</div>
+                                <div class="job-duration">2020 Jan - 2022 Apr</div>
+                                <p class="job-description">
+                                        Worked on different projects related to Warehouse Management System and solved complex
+                                    problems using technical expertise.
+                                    <br><br>
+                                    Implemented custom code and integration parameters for various third parties and documented
+                                    them all.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#employmentCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#employmentCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <h3 style="text-align: center;">Internships and Projects</h3>
+            <div class="accordion" id="internshipsAccordion">
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button"  style="color: #0d47a1; background-color: #e3f2fd" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Project Intern - Skoda Auto India Private Limited, Aurangabad
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#internshipsAccordion">
+                        <div class="accordion-body">
+                            <strong>Duration:</strong> 2018 June -2018 July<br>
+                            <strong>Description:</strong> Development of a website which imports the quarterly and annual details of all the dealers
+                            of Skoda Auto India in a .ppt format
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" style="color: #0d47a1; background-color: #e3f2fd" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Project Intern - Moksha Solutions, Aurangabad
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#internshipsAccordion">
+                        <div class="accordion-body">
+                            <strong>Duration:</strong> 2019 May - 2019 June<br>
+                            <strong>Description:</strong> Worked on developing own website Theme according to the client for the website and make
+                            the website dynamic using WordPress
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section (1/3) -->
+        <div class="col-lg-3 right-section">
+            <h4>Skills and Tools</h4>
+            <p>List your technical and soft skills...</p>
+
+            <h4>Links and References</h4>
+            <p>Provide links to your portfolio, GitHub, etc...</p>
+
+            <h4>Languages</h4>
+            <p>List the languages you are proficient in...</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

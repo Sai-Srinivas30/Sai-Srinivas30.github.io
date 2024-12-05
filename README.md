@@ -1,2 +1,2 @@
-# FirstRepo
-My First Repository
+# MyResume
+Website about my resume
