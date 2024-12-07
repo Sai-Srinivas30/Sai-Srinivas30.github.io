@@ -5,6 +5,18 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    font-family: 'Roboto', sans-serif;
+}
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .profile-container {
     display: flex;
@@ -18,24 +30,33 @@ body {
     margin-bottom: 20px;
 }
 .profile-picture {
+    max-width: 100%;
     width: 150px;
-    height: 150px;
+    height: auto;
+    min-height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #6c757d;
 }
+
 .name-section h1 {
-    font-size: 2.5rem;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.986rem;
     font-weight: bold;
 }
 .name-section h2 {
-    font-size: 1.5rem;
+    margin: 0;
+    font-size: 2.488rem;
     font-weight: 400;
+    font-family: "Montserrat", sans-serif;
     color: #6c757d;
 }
+
 .contact-info p {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .left-section {
     padding: 20px;
@@ -43,20 +64,44 @@ body {
 .left-section h3 {
     margin-top: 30px;
     color: #343a40;
+    font-size: 2.074rem;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 .right-section {
     position: sticky;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     top: 20px;
+    width: auto;
+    height: fit-content;
     padding: 20px;
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-left: 1px solid #ddd;
 }
 .right-section h4 {
     color: #343a40;
     font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.728rem;
+}
+
+.right-section p {
+    color: #343a40;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.right-section li {
+    color: #343a40;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
 }
 
 .col-lg-8 left-section  {
@@ -64,33 +109,11 @@ body {
 }
 
 .education-section {
-    font-family: 'Arial', sans-serif;
     margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
 }
-.education-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.education-details h5 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin: 0;
-}
-.education-details p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #6c757d;
-}
-.education-duration {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #6c757d;
-}
-.education-details ul {
-    margin-top: 5px;
-    padding-left: 20px;
-}
+
 .card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -99,23 +122,29 @@ body {
 }
 .card-header {
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
     height: 5rem;
     text-align: center;
     align-content: center;
     background-color: #f8f9fa;
 }
 .card-text {
-    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
     color: #6c757d;
-    height: 4rem;
+    height: 2.5rem;
     text-align: center;
     align-content: center;
 }
 .duration {
     font-style: italic;
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
     color: #343a40;
-    height: 2rem;
+    height: 1rem;
     text-align: center;
     align-content: center;
 }
@@ -128,6 +157,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f8f9fa;
     border-radius: 8px;
     padding: 20px;
@@ -135,21 +165,26 @@ body {
 }
 .job-title {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.728rem;
     margin-bottom: 5px;
     color: #ff6f61  ;
 }
 .company-name {
-    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.44rem;
     color: #0d6efd;
 }
 .job-duration {
     font-style: italic;
-    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.2rem;
     color: #00a8ff;
 }
 .job-description {
-    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    font-style:normal;
     margin-top: 10px;
     color:#dcdde1;
     text-align: left; 
@@ -165,6 +200,8 @@ body {
 .accordion-button{
     background-color: #fafaf8;
     color: #0d47a1;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.44rem;
     font-weight: bold;
 }
 
@@ -177,11 +214,43 @@ body {
 }
 .accordion-body {
     background-color: #bbdefb;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.2rem;
     color: #5e3a78;
+}
+
+.two-column-list {
+    font-family: 'Roboto', sans-serif;
+    font-size:1.2rem;
+    column-count: 2; /* Number of columns */
+    column-gap: 20px; /* Space between columns */
+    list-style-type: none; /* Remove bullets if desired */
+    padding: 0;
 }
 
 @media (max-width: 768px) {
     body {
         background-attachment: scroll;
+    }
+
+    .right-section {
+        position: fixed;
+        top: 250px;
+        right: -20%; /* Initially hidden */
+        width: 200px;
+        height: 100%;
+        background: white;
+        overflow-y: auto;
+        width: auto;
+        height: fit-content;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease-in-out;
+        padding: 20px;
+        border-left: 1px solid #ddd;
+    }
+
+    .right-section.show {
+        right: 0; /* Show when toggled */
     }
 }
